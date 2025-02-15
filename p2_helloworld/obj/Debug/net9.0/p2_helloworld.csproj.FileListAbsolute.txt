@@ -12,3 +12,4 @@ C:\Users\taha.kiziltepe\Desktop\Cs\p2_helloworld\obj\Debug\net9.0\refint\p2_hell
 C:\Users\taha.kiziltepe\Desktop\Cs\p2_helloworld\obj\Debug\net9.0\p2_helloworld.pdb
 C:\Users\taha.kiziltepe\Desktop\Cs\p2_helloworld\obj\Debug\net9.0\p2_helloworld.genruntimeconfig.cache
 C:\Users\taha.kiziltepe\Desktop\Cs\p2_helloworld\obj\Debug\net9.0\ref\p2_helloworld.dll
+c:\Users\taha.kiziltepe\Desktop\Cs\p2_helloworld\obj\Debug\net9.0\p2_helloworld.sourcelink.json
