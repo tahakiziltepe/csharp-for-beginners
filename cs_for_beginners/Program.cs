@@ -44,7 +44,19 @@ int b1 = 2100000000;
 long c1 = (long)a1 + (long)b1;
 Console.WriteLine(c1);
 
-int a2 = 2100000000;
-int b2 = 2100000000;
-long c2 = checked(a2+b2);
-Console.WriteLine(c2);
+// returns error because the result is too large for an int
+// int a2 = 2100000000;
+// int b2 = 2100000000;
+//long c2 = checked(a2+b2);
+//Console.WriteLine(c2);
+
+// Part 8
+double a3 = 42.1;
+float b3 = 38.2F;
+double c3 = a3 + b3;
+Console.WriteLine(c3); // 0,30000076293945
+
+decimal a4 = 42.1M;
+decimal b4 = 38.2M;
+decimal c4 = a4 + b4;
+Console.WriteLine($"The answer is {c4}"); // 80.3
