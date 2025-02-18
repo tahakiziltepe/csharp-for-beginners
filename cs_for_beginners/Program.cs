@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-// Part 1
+﻿// Part 1
 Console.WriteLine("Hello, World!");
 
 // Part 3
@@ -111,14 +109,39 @@ else
 int counter = 0;
 while (counter < 10)
 {
-    Console.WriteLine($"Hello World! The counter is {counter}");
+    Console.WriteLine($"Hello World! This is While Loop and the counter is {counter}");
     counter++;
 }
 
 int counter1 = 0;
 do
 {
-    Console.WriteLine($"Hello World! The counter is {counter1}");
+    Console.WriteLine($"Hello World! This is DoWhile Loop and the counter is {counter1}");
     counter1++;
 }
 while (counter1 < 10);
+
+
+// Part 11
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine($"Hello World! This is For Loop and the index is {i}");
+}
+
+for (int i = 0; i < 10; i++)
+{
+    if (i == 7)
+    {
+        Console.WriteLine("Found seven!");
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+for (int row = 1; row < 11; row++)
+{
+    for (char column = 'a'; column < 'k'; column++)
+    {
+        Console.WriteLine($"The cell is ({row}, {column})");
+    }
+}
