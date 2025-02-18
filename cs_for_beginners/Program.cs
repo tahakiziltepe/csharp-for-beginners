@@ -64,34 +64,61 @@ Console.WriteLine($"The answer is {c4}"); // 80.3
 // Part 9
 int a5 = 7;
 int b5 = 4;
-if (a5 + b5 > 10) 
+if (a5 + b5 > 10)
     Console.WriteLine("The answer is greater than 10.");
-else 
+else
     Console.WriteLine("The answer is not greater than 10.");
 
 int a6 = 5;
 int b6 = 3;
 bool myTest = (a6 + b6 > 10);
-if (myTest) {
+if (myTest)
+{
     Console.WriteLine("The answer is greater than 10.");
-} else if (a6 + b6 == 10) { 
+}
+else if (a6 + b6 == 10)
+{
     Console.WriteLine("The answer is 10.");
-} else { 
+}
+else
+{
     Console.WriteLine("The answer is not greater than 10.");
 }
 
-if ((a6 + b6 > 10) && (a6 == b6)) {
+if ((a6 + b6 > 10) && (a6 == b6))
+{
     Console.WriteLine("The answer is greater than 10.");
     Console.WriteLine("And the first number is equal to the second.");
-} else {
+}
+else
+{
     Console.WriteLine("The answer is not greater than 10.");
     Console.WriteLine("Or the first number is not equal to the second.");
 }
 
-if ((a6 + b6 > 10) || (a6 == b6)) {
+if ((a6 + b6 > 10) || (a6 == b6))
+{
     Console.WriteLine("The answer is greater than 10.");
     Console.WriteLine("Or the first number is equal to the second.");
-} else {
+}
+else
+{
     Console.WriteLine("The answer is not greater than 10.");
     Console.WriteLine("And the first number is not equal to the second.");
 }
+
+// Part 10
+int counter = 0;
+while (counter < 10)
+{
+    Console.WriteLine($"Hello World! The counter is {counter}");
+    counter++;
+}
+
+int counter1 = 0;
+do
+{
+    Console.WriteLine($"Hello World! The counter is {counter1}");
+    counter1++;
+}
+while (counter1 < 10);
