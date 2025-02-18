@@ -31,3 +31,20 @@ Console.WriteLine(newFriends.ToUpper());
 Console.WriteLine(newFriends.Length);
 Console.WriteLine(newFriends.StartsWith("My"));
 Console.WriteLine(newFriends.EndsWith("Maria"));
+
+
+// Part 7
+int a = 18;
+int b = 6;
+int c = a + b;
+Console.WriteLine(c);
+
+int a1 = 2100000000;
+int b1 = 2100000000;
+long c1 = (long)a1 + (long)b1;
+Console.WriteLine(c1);
+
+int a2 = 2100000000;
+int b2 = 2100000000;
+long c2 = checked(a2+b2);
+Console.WriteLine(c2);
