@@ -1,4 +1,6 @@
 ﻿// Part 1
+using System.Runtime.InteropServices;
+
 Console.WriteLine("Hello, World!");
 
 // Part 3
@@ -180,16 +182,33 @@ var names2 = new string[] { "Taha", "Ana", "Felipe" };
 // You can not use in arrays names2.Add("Maria"); like List<string>
 // Arrays are fixed in length, you can 
 names2 = [..names2, "Maria"];
-
 foreach (var item in names2)
 {
     Console.WriteLine($"Hello {item.ToUpper()}!");
 }
 
 names2 = names2.Append("Maria").ToArray();
-
 foreach (var item in names2)
 {
     Console.WriteLine($"Hello {item.ToUpper()}!");
 }
 
+
+// Part 14
+Console.WriteLine("----------------- Part 14");
+
+var names3 = new List<string> { "Taha", "Ana", "Felipe" };
+names3.Sort();
+foreach (var name in names3)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+var numberList = new List<int> { 2, 7, 4, 1, 5, 3 };
+Console.WriteLine($"The index of 7 is {numberList.IndexOf(7)}");
+numberList.Sort();
+Console.WriteLine($"The index of 7 is {numberList.IndexOf(7)}");
+foreach (var number in numberList)
+{
+    Console.WriteLine($"{number}");
+}
