@@ -1,14 +1,18 @@
 ﻿// Part 1
 using System.Runtime.InteropServices;
+Console.WriteLine("----------------- Part 1");
+
 
 Console.WriteLine("Hello, World!");
 
 // Part 3
+Console.WriteLine("----------------- Part 3");
 string firstFriend = "Maria";
 string secondFriend = "Sage";
 Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
 
 // Part 5
+Console.WriteLine("----------------- Part 5");
 string firstFriend5 = "  Maria  ";
 firstFriend5 = firstFriend5.TrimStart();
 
@@ -21,6 +25,7 @@ thirdFriend5 = thirdFriend5.Trim();
 Console.WriteLine($"My friends are {firstFriend5} and {secondFriend5} and {thirdFriend5}");
 
 // Part 6
+Console.WriteLine("----------------- Part 6");
 string friends = $"My friends are {firstFriend5} and {secondFriend5} and {thirdFriend5}";
 Console.WriteLine(friends.Replace("Sage", "Hank"));
 string newFriends = friends.Replace("Maria", "John");
@@ -34,6 +39,7 @@ Console.WriteLine(newFriends.EndsWith("Maria"));
 
 
 // Part 7
+Console.WriteLine("----------------- Part 7");
 int a = 18;
 int b = 6;
 int c = a + b;
@@ -51,6 +57,7 @@ Console.WriteLine(c1);
 //Console.WriteLine(c2);
 
 // Part 8
+Console.WriteLine("----------------- Part 8");
 double a3 = 42.1;
 float b3 = 38.2F;
 double c3 = a3 + b3;
@@ -62,6 +69,7 @@ decimal c4 = a4 + b4;
 Console.WriteLine($"The answer is {c4}"); // 80.3
 
 // Part 9
+Console.WriteLine("----------------- Part 9");
 int a5 = 7;
 int b5 = 4;
 if (a5 + b5 > 10)
@@ -108,6 +116,7 @@ else
 }
 
 // Part 10
+Console.WriteLine("----------------- Part 10");
 int counter = 0;
 while (counter < 10)
 {
@@ -125,6 +134,7 @@ while (counter1 < 10);
 
 
 // Part 11
+Console.WriteLine("----------------- Part 11");
 for (int i = 0; i < 10; i++)
 {
     Console.WriteLine($"Hello World! This is For Loop and the index is {i}");
@@ -150,6 +160,7 @@ for (int row = 1; row < 11; row++)
 
 
 // Part 12
+Console.WriteLine("----------------- Part 12");
 var names = new List<string> { "Taha", "Ana", "Felipe" };
 Console.WriteLine(names.Capacity);
 for (int i = 0; i < names.Count; i++)
@@ -211,4 +222,29 @@ Console.WriteLine($"The index of 7 is {numberList.IndexOf(7)}");
 foreach (var number in numberList)
 {
     Console.WriteLine($"{number}");
+}
+
+
+// Part 15
+Console.WriteLine("----------------- Part 15");
+
+List<int> scores = [97, 92, 81, 60];
+
+for (int i = 0; i < scores.Count; i++)
+{
+    if (scores[i] > 80)
+    {
+        Console.WriteLine($"The score {scores[i]} is greater than 80.");
+    } 
+}
+
+// Deferred execution
+IEnumerable<int> scoreQuery =
+    from score in scores
+    where score > 80
+    select score;
+
+foreach (int i in scoreQuery)
+{
+    Console.WriteLine($"The score {i} is greater than 80.");
 }
