@@ -145,3 +145,20 @@ for (int row = 1; row < 11; row++)
         Console.WriteLine($"The cell is ({row}, {column})");
     }
 }
+
+
+// Part 12
+var names = new List<string> { "Taha", "Ana", "Felipe" };
+Console.WriteLine(names.Capacity);
+for (int i = 0; i < names.Count; i++)
+{
+    Console.WriteLine("Hello " + names[i].ToUpper() + "!");
+}
+
+names.Add("Maria");
+names.Remove("Ana");
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
