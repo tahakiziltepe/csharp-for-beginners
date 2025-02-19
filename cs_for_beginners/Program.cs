@@ -162,3 +162,34 @@ foreach (var name in names)
     Console.WriteLine($"Hello {name.ToUpper()}!");
 }
 
+
+// Part 13
+Console.WriteLine("----------------- Part 13");
+Console.WriteLine(names[0]);
+Console.WriteLine(names[^1]);
+
+names.Add("John");
+names.Add("Michael");
+
+foreach (var item in names[2..4])
+{
+    Console.WriteLine($"Hello {item.ToUpper()}!");
+}
+
+var names2 = new string[] { "Taha", "Ana", "Felipe" };
+// You can not use in arrays names2.Add("Maria"); like List<string>
+// Arrays are fixed in length, you can 
+names2 = [..names2, "Maria"];
+
+foreach (var item in names2)
+{
+    Console.WriteLine($"Hello {item.ToUpper()}!");
+}
+
+names2 = names2.Append("Maria").ToArray();
+
+foreach (var item in names2)
+{
+    Console.WriteLine($"Hello {item.ToUpper()}!");
+}
+
